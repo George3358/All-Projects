@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur distinctio numquam hic ut doloribus laborum
+        tempora, iusto quas tenetur? Ad vero deserunt nostrum quod totam accusantium, ea unde eaque facere?
+    </div>
+</body>
+<script src="jquerry.js">
+    $.get('https://jsonplaceholder.typicode.com/posts', function (response) {
+        console.log(response);
+
+        $('#container').text(response[0].title);
+    });
+</script>
+
+</html>

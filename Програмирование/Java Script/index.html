@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        .text {
+            color: blue;
+            font-size: 24px;
+            width: 500px;
+        }
+
+        .new {
+            color: red;
+            font-size: 20px;
+            width: 600px;
+        }
+
+        img {
+            width: 400px;
+        }
+
+        .container {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        button {
+            padding: 20px 36px;
+            background-color: #4985FF;
+            border: none;
+            color: white;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam ipsum odio optio cum, placeat
+        consequuntur,
+        quaerat quas vero deserunt asperiores consectetur unde ut laborum natus ipsa accusamus magnam sint. Doloribus!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam ipsum odio optio cum, placeat consequuntur,
+        quaerat quas vero deserunt asperiores consectetur unde ut laborum natus ipsa accusamus magnam sint. Doloribus!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam ipsum odio optio cum, placeat consequuntur,
+        quaerat quas vero deserunt asperiores consectetur unde ut laborum natus ipsa accusamus magnam sint. Doloribus!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam ipsum odio optio cum, placeat consequuntur,
+        quaerat quas vero deserunt asperiores consectetur unde ut laborum natus ipsa accusamus magnam sint. Doloribus!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam ipsum odio optio cum, placeat consequuntur,
+        quaerat quas vero deserunt asperiores consectetur unde ut laborum natus ipsa accusamus magnam sint.
+    </p>
+    <h1>Hello</h1>
+    <button>Моя кнопка</button>
+    <div class="container">
+        Это библиотека jquery.Благодаря этой библиотеке вы можете лучше и удобнее использовать JavaScript.
+        <img src="https://azatai.s3.amazonaws.com/static/052741.png" alt="">
+    </div>
+</body>
+<script src="./jquerry.js"></script>
+<script>
+    alert($(".text").text());
+
+    function changeColor() {
+        $("h1").css("color", "red")
+    }
+
+    setTimeout(changeColor, 2000)
+
+    $('button,.text').on('dblclick', function () {
+        $(".text,h1").toggleClass('new')
+        $(".container").toggleClass('show')
+    })
+</script>
+
+</html>

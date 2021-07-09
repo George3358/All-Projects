@@ -1,0 +1,10 @@
+.box2{
+    position: relative;
+    z-index: 1000;
+    top: 100;
+    background-color: blueviolet;
+}
+.img{
+    position: relative;
+    z-index: 1;
+}

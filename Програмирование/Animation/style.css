@@ -1,0 +1,38 @@
+#container {
+    width: 500px;
+    border: 3px solid green;
+    padding: 24px;
+    margin: 36px;
+    font-size: 36px;
+    font-weight: bold;
+    animation: buildCircle 3s ease-in infinite 1s;
+}
+
+#container:hover {
+    /* transition: 3s ease-in-out;
+    transform: translate(-100px); */
+    animation: buildCircle 3s infinite 1s;
+}
+
+@keyframes buildCircle {
+    10% {
+        color: greenyellow;
+        font-size: 24px;
+    }
+    30% {
+        color: blue;
+        font-size: 23px;
+    }
+    50% {
+        color: orange;
+        font-size: 22px;
+    }
+    70% {
+        color: red;
+        font-size: 21px;
+    }
+    100% {
+        color: brown;
+        font-size: 20px;
+    }
+}
